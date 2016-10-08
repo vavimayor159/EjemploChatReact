@@ -16,10 +16,14 @@ var ChatComponent = React.createClass({
     }
 });
 
-var TitleComponent = React.createClass({
+var HeaderComponent = React.createClass({
     render: function () {
         return (
-            <h1>Chat con React</h1>
+        <nav>
+            <div className="nav-wrapper indigo darken-3">
+                <a href="#" class="brand-logo">Chat con React</a>
+            </div>
+        </nav>
         )
     }
 });
@@ -28,7 +32,7 @@ var AppComponent = React.createClass({
     render: function () {
         return (
             <main>
-                <TitleComponent />
+                <HeaderComponent />
                 <ChatComponent />
             </main>
         )
