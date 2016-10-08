@@ -1,0 +1,27 @@
+{
+  "name": "chatreact",
+  "version": "1.0.0",
+  "description": "Este es un ejemplo de chat en tiempo real on React JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vavimayor159/EjemploChatReact.git"
+  },
+  "keywords": [
+    "Chat",
+    "RealTime",
+    "ReactJS",
+    "NodeJs",
+    "Javascript"
+  ],
+  "author": "Ivan Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vavimayor159/EjemploChatReact/issues"
+  },
+  "homepage": "https://github.com/vavimayor159/EjemploChatReact#readme"
+}
