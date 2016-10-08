@@ -5,13 +5,15 @@
 var ChatComponent = React.createClass({
     render: function () {
         return (
-            <form id="chat">
-                <input type="text" name="message" id="message"/>
-                <button className="btn waves-effect waves-light" type="submit" name="action">
-                    Enviar
-                    <i className="material-icons right">send</i>
-                </button>
-            </form>
+            <div id="chat">
+                <form id="send-message-form">
+                    <input type="text" name="message" id="message"/>
+                    <button className="btn waves-effect waves-light" type="submit" name="action">
+                        Enviar
+                        <i className="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
         )
     }
 });
