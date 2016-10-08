@@ -1,2 +1,8 @@
 # Don't add the IDE files
 .idea/
+
+# Don't add the npm log files
+npm-debug.log
+
+# Don't add the package files everyone can download is own
+node_modules/
