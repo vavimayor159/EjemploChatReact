@@ -2,16 +2,26 @@
  * Created by ivan on 8/10/16.
  */
 
+var MessageContarinerComponent = React.createClass({
+   render: function () {
+       return (
+           <div id="message-container">
+                
+           </div>
+       )
+   }
+});
+
 var MessageFormComponent = React.createClass({
     render: function () {
         return (
             <div id="send-message-box">
                 <form>
                     <div className="row">
-                        <div className="col s9">
+                        <div className="col s10">
                             <input type="text" name="message" id="message"/>
                         </div>
-                        <div className="col s3">
+                        <div className="col s2">
                             <button className="btn waves-effect waves-light" type="submit" name="action">
                                 Enviar
                                 <i className="material-icons right">send</i>
@@ -28,6 +38,7 @@ var ChatComponent = React.createClass({
     render: function () {
         return (
             <div id="chat">
+                <MessageContarinerComponent />
                 <MessageFormComponent />
             </div>
         )
