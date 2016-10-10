@@ -3,8 +3,8 @@
  */
 var React = require('react');
 
-var MessageContainer = require('MessageContainer');
-var MessageForm = require('MessageForm');
+var MessageContainer = require('./MessageContainer');
+var MessageForm = require('./MessageForm');
 
 module.exports = React.createClass({
     render: function () {

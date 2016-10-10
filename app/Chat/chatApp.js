@@ -7,8 +7,8 @@ var ReactDOM = require('react-dom');
 var React = require('react');
 
 // Import the components
-var Header = require('Header');
-var Chat = require('Chat');
+var Header = require('./Header');
+var Chat = require('./Chat');
 
 // Create the main component
 var ChatApp = React.createClass({
