@@ -15,21 +15,19 @@ var MessageContarinerComponent = React.createClass({
 var MessageFormComponent = React.createClass({
     render: function () {
         return (
-            <div id="send-message-box">
-                <form>
-                    <div className="row">
-                        <div className="col s10">
-                            <input type="text" name="message" id="message"/>
-                        </div>
-                        <div className="col s2">
-                            <button className="btn waves-effect waves-light" type="submit" name="action">
-                                Enviar
-                                <i className="material-icons right">send</i>
-                            </button>
-                        </div>
+            <form id="send-message-form">
+                <div className="row">
+                    <div className="col s10">
+                        <input type="text" name="message" id="message"/>
                     </div>
-                </form>
-            </div>
+                    <div className="col s2">
+                        <button className="btn waves-effect waves-light" type="submit" name="action">
+                            Enviar
+                            <i className="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
         )
     }
 });
