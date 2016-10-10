@@ -23,6 +23,7 @@ main,
 }
 #message-container {
   height: calc(100% - 86px);
+  overflow: hidden;
 }
 #send-message-form {
   width: 100%;
