@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server",
     "compile-less": "lessc assets/styles/chat.less public/styles/chat.css",
-    "compile-react": "browserify -t [ babelify --presets [ react ] ] app/Chat/chatApp.js -o public/scripts/app.js"
+    "compile-react": "browserify -t [ babelify --presets [ react ] ] app/Chat/app.js -o public/app/app.js"
   },
   "repository": {
     "type": "git",
