@@ -7,8 +7,12 @@
 /*****************************************
              Components Files
 ******************************************/
-#send-message-form {
+#send-message-box {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+#send-message-box form {
+  width: 90%;
+  margin: 0 auto;
 }

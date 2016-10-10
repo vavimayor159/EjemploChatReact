@@ -2,17 +2,27 @@
  * Created by ivan on 8/10/16.
  */
 
-var ChatComponent = React.createClass({
+var MessageFormComponent = React.crateClass({
     render: function () {
         return (
-            <div id="chat">
-                <form id="send-message-form">
+            <div id="send-message-box">
+                <form>
                     <input type="text" name="message" id="message"/>
                     <button className="btn waves-effect waves-light" type="submit" name="action">
                         Enviar
                         <i className="material-icons right">send</i>
                     </button>
                 </form>
+            </div>
+        )
+    }
+});
+
+var ChatComponent = React.createClass({
+    render: function () {
+        return (
+            <div id="chat">
+                <MessageFormComponent />
             </div>
         )
     }
