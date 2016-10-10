@@ -2,7 +2,7 @@
  * Created by ivan on 8/10/16.
  */
 
-var MessageContarinerComponent = React.createClass({
+var MessageContainerComponent = React.createClass({
    render: function () {
        return (
            <div id="message-container">
@@ -36,7 +36,7 @@ var ChatComponent = React.createClass({
     render: function () {
         return (
             <div id="chat">
-                <MessageContarinerComponent />
+                <MessageContainerComponent />
                 <MessageFormComponent />
             </div>
         )
