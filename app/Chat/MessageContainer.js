@@ -6,7 +6,7 @@ var React = require('react');
 module.exports = React.createClass({
     render: function () {
         var messages = this.props.messagesValues.map(function (message) {
-            return <p>{message}</p>
+            return <p key={message.key}>{message.message}</p>
         });
 
         return (

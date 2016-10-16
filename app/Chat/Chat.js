@@ -26,7 +26,7 @@ module.exports = React.createClass({
         messagesRef.on('child_added', function(data) {
 
             var newMessagesState = this.state.messages.slice(0);
-            newMessagesState.push(data.val());
+            newMessagesState.push({key: data.key, message: data.val()});
             this.setState({messages: newMessagesState});
 
         }.bind(this));
