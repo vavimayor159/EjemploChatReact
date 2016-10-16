@@ -12,15 +12,24 @@ module.exports = React.createClass({
      * add the message in the param to the state
      * @param message: Message to add */
     addMessage: function (message) {
-        var newMessagesState = this.state.messages.slice(0);
-        try {
-            newMessagesState.push(message);
-            this.setState({messages: newMessagesState});
-        } catch (err){
-            var errorMessage = err ? err.message : 'Hubo un error al registrar tú mensaje';
-            Materialize.toast(errorMessage, 4000);
-        }
 
+        // Send the message to the firebase database
+        firebase.database().ref('/messages').push(message);
+
+    },
+
+    /** When the component is initialized
+     * start a communication channel with the firebase
+     * database */
+    componentWillMount: function () {
+        var messagesRef = firebase.database().ref('/messages');
+        messagesRef.on('child_added', function(data) {
+
+            var newMessagesState = this.state.messages.slice(0);
+            newMessagesState.push(data.val());
+            this.setState({messages: newMessagesState});
+
+        }.bind(this));
     },
 
     getInitialState: function () {

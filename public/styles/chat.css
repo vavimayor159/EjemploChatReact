@@ -23,7 +23,8 @@ main,
 #message-container {
   height: calc(100% - 86px);
   width: 100%;
-  padding: 0 5%;
+  padding: 0 3%;
+  overflow: auto;
 }
 #send-message-form {
   width: 95%;

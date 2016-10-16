@@ -10,6 +10,7 @@ var Chat = require('./Chat');
 
 // Create the main component
 module.exports = React.createClass({
+    
     /** Before the component of the app will be mounted we do all the necesary
     configuration */
     componentWillMount: function () {
